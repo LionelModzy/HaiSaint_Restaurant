@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Nhóm 1: Trang chủ, Quản lý Nhân viên, Tài khoản -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Trang chủ" />
+
+        <item
+            android:id="@+id/nav_staff"
+            android:icon="@drawable/user_cog_solid"
+            android:title="Quản lý Nhân viên" />
+
+        <item
+            android:id="@+id/nav_information"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="Tài khoản" />
+    </group>
+
+    <!-- Dòng ngăn cách giữa hai nhóm -->
+    <item
+        android:id="@+id/nav_divider"
+        android:title="- - - - - - - - - - - - - - - - - - - - -"
+        android:enabled="false"
+        android:background="@color/divider_color"
+        android:height="2dp"
+        app:showAsAction="never"/>
+
+    <!-- Nhóm 2: Thêm Loại Món, Danh sách Bàn, Thống kê -->
+    <group>
+        <item
+            android:id="@+id/nav_add_category"
+            android:icon="@drawable/ic_baseline_fastfood_24"
+            android:title="Thêm Loại Món" />
+
+        <item
+            android:id="@+id/nav_tables"
+            android:icon="@drawable/ic_baseline_event_seat_40"
+            android:title="Danh sách Bàn" />
+
+        <item
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/ic_baseline_storage_24"
+            android:title="Thống kê" />
+    </group>
+
+    <!-- Dòng ngăn cách giữa nhóm chức năng và phiên bản -->
+    <item
+        android:id="@+id/nav_divider_bottom"
+        android:title="- - - - - - - - - - - - - - - - - - - - -"
+        android:enabled="false"
+        android:background="@color/divider_color"
+        android:height="2dp"
+        app:showAsAction="never"/>
+
+    <!-- Thông tin phiên bản -->
+    <group>
+        <item
+            android:id="@+id/nav_version"
+            android:title="Phiên bản 1.0"
+            android:enabled="true"
+            android:icon="@drawable/baseline_app_settings_alt_24" />
+    </group>
+
+    <!-- Đăng xuất -->
+    <group>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="Đăng xuất" />
+    </group>
+
+</menu>

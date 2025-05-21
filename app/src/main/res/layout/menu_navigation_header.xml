@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:background="@color/bg_blue3"
+    android:id="@+id/menu_header">
+
+
+    <TextView
+        android:id="@+id/txt_menu_ten_nhahang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="10dp"
+        android:text="Hai Saint Restaurant"
+        android:textColor="@color/dark_blue"
+        android:textSize="26sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/img_menu_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/user_solid"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_drawable"
+            android:contentDescription="Avatar" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txt_menu_tennv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_menu_avatar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true"
+        android:text="Trần Công Thành"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txt_menu_chucvu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_menu_avatar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true"
+        android:text="Quản lí"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
